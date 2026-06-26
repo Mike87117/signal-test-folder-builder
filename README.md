@@ -96,12 +96,6 @@ pip install PySide6 openpyxl
 ## 執行方式
 
 ```bash
-python addff7.py
-```
-
-如果你將主程式改名為 `main.py`，則執行：
-
-```bash
 python main.py
 ```
 
@@ -113,31 +107,6 @@ signal-test-folder-builder/
 ├── requirements.txt
 ├── main.py
 └── .gitignore
-```
-
-建議將目前的 `addff7.py` 重新命名為 `main.py`，讓 GitHub 專案看起來更正式，也比較容易讓其他人理解入口檔案。
-
-## requirements.txt
-
-```text
-PySide6
-openpyxl
-```
-
-## .gitignore 建議
-
-```gitignore
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.venv/
-venv/
-dist/
-build/
-*.spec
-.DS_Store
-Thumbs.db
 ```
 
 ## 使用流程
@@ -198,7 +167,3 @@ Thumbs.db
 - 新增英文版介面或 README，方便公開分享。
 - 加入 PyInstaller 打包流程，讓沒有 Python 環境的使用者也能執行。
 - 加入單元測試，特別是 Slot / GEN 編號解析邏輯。
-
-## 授權
-
-可依需求選擇授權方式。若只是一般公開分享，建議使用 MIT License。
